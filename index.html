@@ -6,20 +6,63 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <title>Document</title>
+    <link rel="stylesheet" href="./tailwind.css">
+    <!-- fontawesome  -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" 
+     integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" 
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Emergency Service</title>
 </head>
 <body>
     <!-- Navbar  -->
-    <div class="navbar bg-base-100 shadow-sm">
-        <div class="logo flex">
-            <img src="./assets/logo.png" alt="">
-            <h2>Emergency Service</h2>
+    <div class="navbar bg-base-100 shadow-sm flex justify-between ">
+        <div class="logo flex items-center ml-[50px]">
+            <img class="h-[50px]" src="./assets/logo.png" alt="">
+            <h2 class="font-bold text-2xl ml-[20px] text-[#013223]">Emergency<br>Service</h2>
         </div>
-        <div class="icons flex">
-            <div class=""><span>0</span> <img src="./assets/coin.png" alt=""></div>
-            <div class=""><span>0</span> <img src="./assets/heart.png" alt=""></div>
-            <div class=""><button><span>0</span> Copy</button></div>
+        <div class="icons flex mr-[50px]">
+            <div class="btn bg-[#41ff6a2c]"><span>0</span> <img class="h-[30px] " src="./assets/coin.png" alt=""></div>
+            <div class="btn bg-[#41ff6a2c]"><span>0</span> <img class="h-[30px] " src="./assets/heart.png" alt=""></div>
+            <div class=""><button class="btn bg-[#00A63E]"><span>0</span> Copy</button></div>
         </div>
     </div>
+    <!-- banner -->
+     <div class="bg-line flex flex-col items-center bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] p-10">
+        <img class="h-[130px]" src="./assets/logo-dark.png" alt="">
+        <h1 class="text-white font-bold text-[40px]">Emergency Service Directory</h1>
+        <h3 class="text-white font-bold text-[20px]">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</h3>
+     </div>
+    <!-- cards and call history section  -->
+      <div class="bg-[#f5fff6]">
+
+        <!-- card  -->
+        <div class=" border-2 border-red-600 p-10">
+            <div class="flex justify-between items-center">
+                <div class="bg-red-300 rounded-2xl flex flex-col items-center-safe p-[10px]"><img class="h-[40px]" src="./assets/emergency.png" alt=""></div>
+                <div class=""><i class="fa-regular fa-heart text-[22px] text-gray-500"></i></div>
+            </div>
+            <div class="">
+                <div class="mt-[10px]">
+                    <h3 class="font-bold text-[24px]">National Emergency Number</h3> 
+                    <p class="text-[18px]">National Emergency</p>  
+                </div>
+                <div class="mt-[10px]">
+                    <h2 class="font-bold text-[25px]">999</h2>
+                    <p class="btn rounded-2xl text-gray-400">All</p>
+                </div>
+                <br>
+                <button class="text-gray-400 btn px-15"><i class="fa-solid fa-copy"></i>Copy</button>
+                <button class="btn bg-[#00A63E] text-white px-15 "><i class="fa-solid fa-phone"></i>Call</button>
+            </div>
+        </div>
+
+    <!-- Call history  -->
+    
+    
+      </div>
+
+      <!-- font awesome cdn  -->
+      
 </body>
 </html>
