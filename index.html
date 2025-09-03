@@ -226,19 +226,20 @@
     <!-- Call history  -->
         <div class="call-history w-[400px] p-7 bg-white rounded-2xl grid-cols-1">
         <div class="flex justify-between items-center">
-            <h2 class="font-bold text-[18px]">Call History</h2>
-             <button class="btn bg-[#00A63E] rounded-3xl text-white text-[18px] p-5">Clear</button>
+            <h2 class="font-bold text-[18px]"><i class="fa-regular fa-clock"></i> Call History</h2>
+             <button id="clear" class="btn bg-[#00A63E] rounded-3xl text-white text-[18px] p-5">Clear</button>
         </div>
         <!-- list of calls  -->
         <div class= "flex justify-between py-5 mt-5">            
         <div id="call-list" class="flex flex-col-reverse">
-        <div class="flex justify-between bg-gray-300">
+        <div class="flex justify-between bg-[#f3f1f1]">
             <div class="">
-                <h4 class="font-bold">National Emergency Number</h4>
-                <h4 class="font-bold">999</h4>
+                <h4 class="font-bold text-[18px]">National Emergency Number</h4>
+                <h4 class="font-bold text-[18px]">999</h4>
             </div>
-                <div class=""><h4 class="font-bold">Time</h4></div>
-                
+            <div class="">
+                    <h4 class="font-bold text-[18px]">Time</h4>
+            </div>
         </div>
                 
         </div>
@@ -248,6 +249,7 @@
     </div>
     
 
+    <script src="./clear.js"></script>
     <script src="./script.js"></script>
     <script src="./call.js"></script>
       
